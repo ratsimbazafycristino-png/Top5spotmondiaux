@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 des Sports Mondiaux</title>
+  <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<script>
+    function toggleMenu(){
+        document.getElementById("menu").classList.toggle("activite");
+    }
+</script>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2 class="logo">TOP 5 SPORT</h2>
+        <div class="menu-burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu" id="menu">
+            <li> <a href="#accueil">Accueil</a></li>
+            <li><a href="#football">⚽ Football</a></li>
+            <li><a href="#basketball">🏀 Basketball</a></li>
+            <li><a href="#tennis">🎾 Tennis</a></li>
+            <li><a href="#cricket">🏏 Cricket</a></li>
+            <li><a href="#volleyball">🏐 Volleyball</a></li>
+            <li><a href="#contact">✉ Contact</a></li>
+        </ul>
+         
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="accueil">
+        <h1>TOP 5 des <span>Sports Mondiaux</span></h1>
+        <p>Découvrez les sports les plus populaires et les plus pratiqués dans le monde.</p>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+
+        <!-- FOOTBALL -->
+        <div class="sport-card" id="football">
+            <h2><span class="numero">1</span> Football</h2>
+            <img src="football.jpg" alt="foots">
+            <p>Le football est le sport le plus populaire au monde. Il est joué dans presque tous les pays et rassemble des milliards de supporters.</p>
+            <p>Ce sport se joue avec deux équipes de 11 joueurs et un ballon rond. La Coupe du Monde est la compétition la plus célèbre du football.</p>
+            <ul>
+                <li>11 joueurs par équipe</li>
+                <li>Sport collectif</li>
+                <li>🏆 Coupe du Monde</li>
+            </ul>
+        </div>
+
+        <!-- BASKETBALL -->
+        <div class="sport-card" id="basketball">
+            <h2><span class="numero">2</span> Basketball</h2>
+            <img src="basketball.jpg" alt="Des joueurs de basketball e">
+            <p>Le basketball est un sport très populaire, surtout aux États-Unis. Il a été créé en 1891 par James Naismith.</p>
+            <p>Deux équipes de 5 joueurs s'affrontent pour marquer des paniers. La NBA est le championnat le plus connu au monde.</p>
+            <ul>
+                <li>5 joueurs par équipe</li>
+                <li>Sport rapide et dynamique</li>
+                <li>🏆 NBA</li>
+            </ul>
+        </div>
+
+        <!-- TENNIS -->
+        <div class="sport-card" id="tennis">
+            <h2><span class="numero">3</span> Tennis</h2>
+            <img src="tennis.jpg" alt="Un joueur de tennis frappant la balle">
+            <p>Les joueurs doivent envoyer la balle dans le terrain adverse à l'aide d'une raquette. Les grands tournois sont Wimbledon, Roland-Garros et l'US Open.</p>
+            <ul>
+                <li>Sport individuel ou en double</li>
+                <li>Utilise une raquette</li>
+                <li>🏆 Wimbledon · Roland-Garros</li>
+            </ul>
+        </div>
+
+        <!-- CRICKET -->
+        <div class="sport-card" id="cricket">
+            <h2><span class="numero">4</span> Cricket</h2>
+            <img src="cricket.jpg" alt="Des joueurs de cricket sur le terrain">
+            <p>Le cricket est très populaire en Inde, au Pakistan et en Angleterre. Ce sport oppose deux équipes avec une batte et une balle.</p>
+            <p>Les joueurs doivent marquer des points appelés "runs". Les matchs de cricket peuvent durer plusieurs heures.</p>
+            <ul>
+                <li>Sport collectif</li>
+                <li>Très populaire en Asie</li>
+                <li>Utilise une batte et une balle</li>
+            </ul>
+        </div>
+
+        <!-- VOLLEYBALL -->
+        <div class="sport-card" id="volleyball">
+            <h2><span class="numero">5</span> Volleyball</h2>
+            <img src="volleyball.jpg" alt="Des joueurs de volleyball autour d'un filet">
+            <p>Le volleyball est un sport collectif joué avec un ballon et un filet. Chaque équipe doit envoyer le ballon dans le camp adverse.</p>
+            <p>Ce sport est populaire à l'école, à la plage et dans les compétitions internationales. Il demande beaucoup de rapidité et de coordination.</p>
+            <ul>
+                <li>6 joueurs par équipe</li>
+                <li>Sport collectif</li>
+                <li>🏖 Très populaire à la plage</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+       <h2>En savoir plus ? Contactez-moi</h2>
+    <div class="sport-card" id="contact">
+       <form class="contact-form" action="https://formspree.io/f/xjgejzbb" method="POST">
+        <input type="text" name="name" placeholder="Votre nom">
+        <input type="email" name="email" placeholder="Votre email">
+        <textarea name="message" placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+     </form>
+    </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+     <div class="social-icons">
+        <a href="+261 34 15 146 05"></a>
+        <a href="https://facebook.com/Ratsimbazafy Cristino Vanonatsara" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://wa.me/261341514605" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <a href="https://github.com/ratsimbazafycristino-png" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+   </div>
+        &copy; Crist-2026 — Projet Top 5 Sports Mondiaux
+    </footer>
+
+</body>
+</html>
